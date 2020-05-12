@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h3>Comando While</h3>
+<script>
+
+    function pulaLinha() 
+    {
+        document.write("<br>");
+    }
+
+    function mostra(mensagem) 
+    {
+        document.write(mensagem);
+        pulaLinha();
+    }
+
+    var limite = 100;
+    var controle = 1;
+    
+    while ( limite >= controle ) 
+    {
+        if ( (controle % 2) == 0)
+        {
+            mostra(controle + " é par");
+        }
+        controle++;      
+    }
+
+    mostra("FIM");
+
+</script>
